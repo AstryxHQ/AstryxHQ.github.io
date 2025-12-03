@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Stack+Sans+Notch:wght@200..700&display=swap");
+
+:root {
+  --bg-color-primary: #121212;
+  --bg-color-secondary: #1a1a1a;
+  --outline-color-primary: #e6e6e6;
+  --accent-color-primary: #5024a8;
+  --accent-color-secondary: #7646d8;
+}
+
+body {
+  background-color: var(--bg-color-primary);
+  margin: 20px;
+  color: var(--outline-color-primary);
+  font-family: "Lato", sans-serif;
+}
+
+.title-container h1 {
+  color: var(--outline-color-primary);
+  font:
+    900 35px "Stack Sans Notch",
+    sans-serif;
+}
+
+.main-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.ad-left {
+  background-color: var(--bg-color-secondary);
+}
+
+.content-container {
+  background-color: var(--bg-color-secondary);
+  width: 950px;
+}
+
+.ad-right {
+  background-color: var(--bg-color-secondary);
+}
+
+.stat-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+}
+
+#restartButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--accent-color-secondary);
+  color: var(--outline-color-primary);
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  margin: 20px;
+  padding: 10px 30px;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+}
+
+#restartButton img {
+  margin-right: 5px;
+  height: 15px;
+}
