@@ -2,6 +2,7 @@
 
 :root {
     --primary-color: #323030;
+    --accent-color-secondary: #242424;
     --accent-color: #09589d;
     --text-color-prim: #c3c3c3;
     --primary-font: "Martian Mono", monospace;
@@ -10,6 +11,7 @@
 }
 
 body {
+    margin: 0;
     background-color: var(--primary-color);
     color: var(--text-color-prim);
     font-family: "Ubuntu", sans-serif;
@@ -17,13 +19,13 @@ body {
 .title {
     display: flex;
     justify-content: space-between;
-    background-color: white;
+    background-color: var(--accent-color-secondary);
     align-items: center;
     height: 10vh;
 }
 
 .home-link-title {
-    font-family: var(--secondary-font);
+    font-family: var(--thrid-font);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -34,24 +36,21 @@ body {
     height: 5vh;
     border-radius: 0.5vh;
 }
-.signup-info {
-    font-family: var(--primary-font);
+.user-actions {
+    display: flex;
+    justify-content: space-around;
+}
+.signup-link-title, .login-link-title {
     display: flex;
     align-items: center;
-    flex-direction: column;
-    height: 100vh;
-}
-.sinfo-title {
-    background-color: #09589d;
-}
-.signup-info-link {
-    display: flex;
     justify-content: center;
-    align-items: center;
-    border-radius: 0.5vh;
-    background-color: #09589d;
     text-decoration: none;
     color: var(--text-color-prim);
-    width: 15vh;
+    font-family: var(--thrid-font);
+    background-color: white;
     height: 5vh;
+    width: 15vh;
+}
+.login-link-title:hover, .signup-link-title:hover {
+    background-color: #383131;
 }
