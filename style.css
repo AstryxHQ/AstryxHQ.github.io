@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Cascadia+Mono:ital,wght@0,200..700;1,200..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+:root {
+    --primary-color: #323030;
+    --accent-color: #09589d;
+    --text-color-prim: #c3c3c3;
+}
+
+body {
+    background-color: var(--primary-color);
+    color: var(--text-color-prim);
+    font-family: "Ubuntu", sans-serif;
+}
+.title {
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    align-items: center;
+    height: 10vh;
+}
+
+.home-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-color-prim);
+    background-color: var(--accent-color);
+    text-decoration: none;
+    width: 20vh;
+    height: 5vh;
+    border-radius: 0.5vh;
+}
