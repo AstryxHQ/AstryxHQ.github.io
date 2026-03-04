@@ -1,9 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Cascadia+Mono:ital,wght@0,200..700;1,200..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cascadia+Mono:ital,wght@0,200..700;1,200..700&family=Martian+Mono:wght@100..800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
 :root {
     --primary-color: #323030;
     --accent-color: #09589d;
     --text-color-prim: #c3c3c3;
+    --primary-font: "Martian Mono", monospace;
+    --secondary-font: "Cascadia Mono", sans-serif;
+    --thrid-font: "Ubuntu", sans-serif;
 }
 
 body {
@@ -13,13 +16,14 @@ body {
 }
 .title {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     background-color: white;
     align-items: center;
     height: 10vh;
 }
 
-.home-button {
+.home-link-title {
+    font-family: var(--secondary-font);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -29,4 +33,25 @@ body {
     width: 20vh;
     height: 5vh;
     border-radius: 0.5vh;
+}
+.signup-info {
+    font-family: var(--primary-font);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+.sinfo-title {
+    background-color: #09589d;
+}
+.signup-info-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5vh;
+    background-color: #09589d;
+    text-decoration: none;
+    color: var(--text-color-prim);
+    width: 15vh;
+    height: 5vh;
 }
