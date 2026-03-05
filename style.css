@@ -33,8 +33,7 @@ body {
     background-color: var(--accent-color);
     text-decoration: none;
     width: 20vh;
-    height: 5vh;
-    border-radius: 0.5vh;
+    height: 10vh;
 }
 .user-actions {
     display: flex;
@@ -48,9 +47,15 @@ body {
     color: var(--text-color-prim);
     font-family: var(--thrid-font);
     background-color: white;
-    height: 5vh;
+    height: 10vh;
     width: 15vh;
 }
 .login-link-title:hover, .signup-link-title:hover {
     background-color: #383131;
+}
+.button-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
 }
